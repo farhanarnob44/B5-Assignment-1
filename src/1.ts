@@ -59,3 +59,43 @@
         }
     }
 }
+{
+    interface Product {
+        name: string;
+        price: number;
+      }
+      
+      function getMostExpensiveProduct(products: Product[]): Product | null{
+        if (products.length === 0) {
+            return null;
+        }
+    
+        return products.reduce((maximum, product) =>
+            product.price > maximum.price ? product : maximum
+        );
+      }
+}
+{
+
+
+    enum Day {
+        Monday,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday,
+        Sunday
+      }
+      
+      function getDayType(day: Day): string{
+        if(day === Day.Sunday){
+            return "weekend"
+        }
+        else{
+            return "weekday"
+        }
+      }
+
+
+    }
