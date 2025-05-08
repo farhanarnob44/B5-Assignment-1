@@ -10,6 +10,8 @@
   }
 }
 
+
+
 {
   function filterByRating(
     items: { title: string; rating: number }[]
@@ -18,11 +20,21 @@
     return returnedBooks;
   }
 }
+
+
+
+
+
+
 {
   function concatenateArrays<T>(...arrays: T[][]): T[] {
     return [].concat(...arrays);
   }
 }
+
+
+
+
 {
   class Vehicle {
     private make: string;
@@ -48,6 +60,11 @@
     }
   }
 }
+
+
+
+
+
 {
   function processValue(value: string | number): number {
     if (typeof value === "string") {
@@ -57,6 +74,14 @@
     }
   }
 }
+
+
+
+
+
+
+
+
 {
   interface Product {
     name: string;
@@ -73,6 +98,13 @@
     );
   }
 }
+
+
+
+
+
+
+
 {
   enum Day {
     Monday,
@@ -92,6 +124,11 @@
     }
   }
 }
+
+
+
+
+
 {
   async function squareAsync(n: number): Promise<number> {
     return new Promise((resolve, reject) => {
