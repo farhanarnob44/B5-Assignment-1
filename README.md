@@ -8,5 +8,36 @@
 
 3. Never: Indicates value that should never occur. It is used for error error throwing functions. It helps to catch impossible cases.
 
+## Provide an example of using union and intersection types in TypeScript.
+
+=> 
+1. Union Types: A union type means a value can be one of multiple types. It allows flexibility. It is usefull data can be in different forms. In example: data can be ID/Number/String.
+
+function printId(id: string | number) {
+    console.log("ID:", id);
+}
+
+printId(101);          // number
+printId("A102");       // string
+
+2. Intersection Types : It means a value must have All the properties from multiple types combined. It allows us to combine multiple types into one.
+
+type Person = {
+    name: string;
+};
+
+type Employee = {
+    employeeId: number;
+};
+
+type EmployeeProfile = Person & Employee;
+
+const emp: EmployeeProfile = {
+    name: "Alice",
+    employeeId: 1234,
+};
+
+console.log(emp);
+
 
 
